@@ -26,4 +26,8 @@ class PlaylistViewController: UIViewController, UITableViewDelegate, UITableView
         cell.newPlaylistLabel.text = plItem.playlistLabel
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 }

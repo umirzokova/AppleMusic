@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class LibraryViewControllers: UITableViewController {
+class LibraryViewController: UITableViewController {
     
     var groups: [LibraryGroups] = [
         LibraryGroups(albumName: "Playlists", imageName: "music.note.list", next: "chevron.right"),
@@ -41,11 +41,16 @@ class LibraryViewControllers: UITableViewController {
         let selectedAlbumName = groups[indexPath.row].albumName
         
         if selectedAlbumName == "Playlists" {
-            performSegue(withIdentifier: "LibraryToLibraryItems", sender: self)
+            performSegue(withIdentifier: "LibraryToPlaylistItems", sender: self)
         } else if selectedAlbumName == "Albums" {
             performSegue(withIdentifier: "LibraryToAlbumItems", sender: self)
         }
-        
+        else if selectedAlbumName == "Artists" {
+            performSegue(withIdentifier: "LibraryToArtistItems", sender: self)
+        }
+        else if selectedAlbumName == "Songs" {
+            performSegue(withIdentifier: "LibraryToSongItem", sender: self)
+        }
     }
     
 //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

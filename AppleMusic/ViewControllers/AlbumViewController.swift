@@ -15,7 +15,7 @@ class AlbumViewController: UIViewController, UICollectionViewDataSource, UIColle
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AlbumsCollection", for: indexPath) as! AlbumsCollectionViewCell
-        cell.albumsIcon.image = UIImage(systemName: "music.note.list")
+        cell.albumsIcon.image = UIImage(systemName: "music.note")
         cell.albumsNameLabel.text = "English as a Second Language"
         cell.albumsSubtitleLabel.text = "Center for Educational D"
         return cell

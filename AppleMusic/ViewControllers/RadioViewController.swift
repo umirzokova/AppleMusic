@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class RadioViewControllers: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class RadioViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     var rcItems: [RadioCollectionViewItems] = [
     RadioCollectionViewItems(genreName: "Soft Pop Station", subtitleGenreName: "Apple Music Pop", albumImage: "IMG_20220606_103658_821"),
