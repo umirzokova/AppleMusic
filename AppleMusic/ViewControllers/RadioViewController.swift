@@ -33,4 +33,15 @@ class RadioViewController: UIViewController, UICollectionViewDelegate, UICollect
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 320, height: 256)
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    @IBAction func onClickPlayer(_ sender: Any) {
+        let vc = MainViewController()
+//        vc.view.backgroundColor = .yellow
+        self.present(vc, animated: true)
+    }
+    
 }

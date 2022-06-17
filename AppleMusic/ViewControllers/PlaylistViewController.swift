@@ -10,6 +10,8 @@ import UIKit
 
 class PlaylistViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var playlistTableView: UITableView!
+    
     var playlistItems: [PlaylistItems] = [
         PlaylistItems(playlistIcon: "plus", playlistLabel: "New Playlist..."),
         PlaylistItems(playlistIcon: "music.note.list", playlistLabel: "My Playlist")
@@ -27,7 +29,19 @@ class PlaylistViewController: UIViewController, UITableViewDelegate, UITableView
         return cell
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "PlaylistToNewPlaylist",
+           let vc = segue.destination as? NewPlaylistViewController,
+           let indexpath = playlistTableView.indexPathForSelectedRow {
+            vc.title = playlistItems[indexpath.row].playlistLabel
+        }
     }
 }
