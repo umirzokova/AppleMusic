@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		668DEC54285C9E4400EC897A /* RecentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668DEC53285C9E4400EC897A /* RecentCollectionViewCell.swift */; };
 		F810BD532859A00F0003D882 /* ArtistItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F810BD522859A00F0003D882 /* ArtistItemsViewController.swift */; };
 		F810BD552859A30A0003D882 /* ArtistItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F810BD542859A30A0003D882 /* ArtistItemsTableViewCell.swift */; };
 		F8139F92285C87AB005887EC /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8139F91285C87AB005887EC /* Color.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		668DEC53285C9E4400EC897A /* RecentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentCollectionViewCell.swift; sourceTree = "<group>"; };
 		F810BD522859A00F0003D882 /* ArtistItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistItemsViewController.swift; sourceTree = "<group>"; };
 		F810BD542859A30A0003D882 /* ArtistItemsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistItemsTableViewCell.swift; sourceTree = "<group>"; };
 		F8139F91285C87AB005887EC /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 		F86980EB283E063A000D9BCE /* ViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				668DEC53285C9E4400EC897A /* RecentCollectionViewCell.swift */,
 				F86980EE283E082E000D9BCE /* LibraryGroupTableViewCell.swift */,
 				F869816728487284000D9BCE /* RadioCollectionViewCell.swift */,
 				F8698191284E1808000D9BCE /* PlaylistTableViewCell.swift */,
@@ -252,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F86980F1283E302B000D9BCE /* LibraryViewController.swift in Sources */,
+				668DEC54285C9E4400EC897A /* RecentCollectionViewCell.swift in Sources */,
 				F86980D8283CC952000D9BCE /* MainViewController.swift in Sources */,
 				F810BD532859A00F0003D882 /* ArtistItemsViewController.swift in Sources */,
 				F83DB7FC285C6F4D00A81F6C /* ArtistItems.swift in Sources */,
