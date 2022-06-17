@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pCD-FD-580">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21179.7" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pCD-FD-580">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21169.4"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -31,6 +32,156 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="amr-er-06l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1033" y="-172"/>
+        </scene>
+        <!--Radio View Controller-->
+        <scene sceneID="2q2-OS-FiM">
+            <objects>
+                <viewController id="wfx-r1-zpB" customClass="RadioViewController" customModule="AppleMusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VdI-El-7wa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Ijg-ed-hRA">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EasyPopTableViewCell" rowHeight="300" id="dck-LV-4Fq" customClass="EasyPopTableViewCell" customModule="AppleMusic" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55.5" width="414" height="300"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dck-LV-4Fq" id="ZQe-tD-T9u">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="NFi-9K-peO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fHP-ok-aOJ">
+                                                        <size key="itemSize" width="250" height="350"/>
+                                                        <size key="estimatedItemSize" width="392" height="350"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TopCollectionViewCell" id="glB-Re-QX2" customClass="TopCollectionViewCell" customModule="AppleMusic" customModuleProvider="target">
+                                                            <rect key="frame" x="16" y="17.5" width="392" height="265"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="E5I-SV-eXV">
+                                                                <rect key="frame" x="0.0" y="0.0" width="392" height="265"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_20220606_103658_821" translatesAutoresizingMaskIntoConstraints="NO" id="0WH-x0-mRq">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="392" height="265"/>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Apple Music" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nEZ-83-go6">
+                                                                        <rect key="frame" x="20" y="231" width="143" height="24"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="0WH-x0-mRq" firstAttribute="top" secondItem="E5I-SV-eXV" secondAttribute="top" id="4Ez-Gu-d8i"/>
+                                                                    <constraint firstItem="nEZ-83-go6" firstAttribute="leading" secondItem="E5I-SV-eXV" secondAttribute="leading" constant="20" id="6K3-bl-DoB"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="0WH-x0-mRq" secondAttribute="bottom" id="A2k-WY-CVV"/>
+                                                                    <constraint firstItem="0WH-x0-mRq" firstAttribute="leading" secondItem="E5I-SV-eXV" secondAttribute="leading" id="DGh-05-QSV"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="0WH-x0-mRq" secondAttribute="trailing" id="Pz9-0i-VYg"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="nEZ-83-go6" secondAttribute="bottom" constant="10" id="Zuv-eE-IAr"/>
+                                                                </constraints>
+                                                            </collectionViewCellContentView>
+                                                            <size key="customSize" width="392" height="265"/>
+                                                            <connections>
+                                                                <outlet property="imageView" destination="0WH-x0-mRq" id="5GJ-bM-xeB"/>
+                                                                <outlet property="label" destination="nEZ-83-go6" id="gT7-LU-Bhb"/>
+                                                            </connections>
+                                                        </collectionViewCell>
+                                                    </cells>
+                                                </collectionView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="NFi-9K-peO" secondAttribute="bottom" id="Uk7-Jb-SHZ"/>
+                                                <constraint firstItem="NFi-9K-peO" firstAttribute="leading" secondItem="ZQe-tD-T9u" secondAttribute="leading" id="Ule-u1-zyo"/>
+                                                <constraint firstAttribute="trailing" secondItem="NFi-9K-peO" secondAttribute="trailing" id="cEQ-B5-evf"/>
+                                                <constraint firstItem="NFi-9K-peO" firstAttribute="top" secondItem="ZQe-tD-T9u" secondAttribute="top" id="hS6-wK-fPD"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="collectionView" destination="NFi-9K-peO" id="d3V-xV-c4w"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecentTableViewCell" rowHeight="260" id="89n-0o-uwU" customClass="RecentTableViewCell" customModule="AppleMusic" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="355.5" width="414" height="260"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="89n-0o-uwU" id="Sw6-qn-AwB">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="260"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="XMd-nU-xHF">
+                                                    <rect key="frame" x="20" y="11" width="374" height="238"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3RP-aX-7SW">
+                                                        <size key="itemSize" width="233" height="225"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" reuseIdentifier="BottomCollectionViewCell" id="Yaj-6y-QiH" customClass="BottomCollectionViewCell" customModule="AppleMusic" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="6.5" width="233" height="225"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="CVd-Va-i7C">
+                                                                <rect key="frame" x="0.0" y="0.0" width="233" height="225"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Recently Played" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zsZ-Wi-d2Z">
+                                                                        <rect key="frame" x="15" y="0.0" width="121" height="21"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="music.quarternote.3" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="CvU-l2-H2C">
+                                                                        <rect key="frame" x="0.0" y="29" width="233" height="196"/>
+                                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                    </imageView>
+                                                                </subviews>
+                                                            </collectionViewCellContentView>
+                                                            <size key="customSize" width="233" height="225"/>
+                                                            <connections>
+                                                                <outlet property="imageView" destination="CvU-l2-H2C" id="pAP-pk-Eub"/>
+                                                                <outlet property="label" destination="zsZ-Wi-d2Z" id="CPm-qD-X5d"/>
+                                                            </connections>
+                                                        </collectionViewCell>
+                                                    </cells>
+                                                </collectionView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="XMd-nU-xHF" secondAttribute="bottom" id="0fd-Sp-W82"/>
+                                                <constraint firstItem="XMd-nU-xHF" firstAttribute="top" secondItem="Sw6-qn-AwB" secondAttribute="topMargin" id="QpJ-nc-Gnb"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="XMd-nU-xHF" secondAttribute="trailing" id="fjL-hZ-bSv"/>
+                                                <constraint firstItem="XMd-nU-xHF" firstAttribute="leading" secondItem="Sw6-qn-AwB" secondAttribute="leadingMargin" id="t1o-FR-Nm1"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="collectionView" destination="XMd-nU-xHF" id="25p-yw-mlU"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Y8C-kG-NNr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ijg-ed-hRA" firstAttribute="top" secondItem="Y8C-kG-NNr" secondAttribute="top" id="Cfg-Sg-kzv"/>
+                            <constraint firstItem="Y8C-kG-NNr" firstAttribute="bottom" secondItem="Ijg-ed-hRA" secondAttribute="bottom" id="QmI-1S-9HC"/>
+                            <constraint firstItem="Ijg-ed-hRA" firstAttribute="leading" secondItem="Y8C-kG-NNr" secondAttribute="leading" id="Wc1-ml-6Ks"/>
+                            <constraint firstItem="Y8C-kG-NNr" firstAttribute="trailing" secondItem="Ijg-ed-hRA" secondAttribute="trailing" id="nXh-NF-JVL"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cxG-8Y-e3j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3110.144927536232" y="1234.8214285714284"/>
         </scene>
         <!--Listen Now-->
         <scene sceneID="83c-KN-uix">
@@ -257,6 +408,50 @@
                                     <outletCollection property="gestureRecognizers" destination="1DN-bb-OnW" appends="YES" id="nht-lL-DUl"/>
                                 </connections>
                             </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2X6-jc-Jpj">
+                                <rect key="frame" x="20" y="495" width="358" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="7" id="y7K-ug-cMQ">
+                                    <size key="itemSize" width="268" height="196"/>
+                                    <size key="estimatedItemSize" width="268" height="196"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="23" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RecentCell" id="6is-r1-eke">
+                                        <rect key="frame" x="46.5" y="23" width="265" height="196"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" id="EKB-BH-oHQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="265" height="196"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Recently played" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bq-KQ-rKb">
+                                                    <rect key="frame" x="0.0" y="11" width="145" height="26"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1lA-6U-n2u">
+                                                    <rect key="frame" x="0.0" y="60" width="265" height="128"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="1lA-6U-n2u" firstAttribute="leading" secondItem="EKB-BH-oHQ" secondAttribute="leading" id="9Iq-PQ-fq2"/>
+                                                <constraint firstAttribute="trailing" secondItem="1lA-6U-n2u" secondAttribute="trailing" id="Km6-xe-1Gj"/>
+                                                <constraint firstItem="1lA-6U-n2u" firstAttribute="top" secondItem="5bq-KQ-rKb" secondAttribute="bottom" constant="20" id="MxW-wV-fQE"/>
+                                                <constraint firstItem="1lA-6U-n2u" firstAttribute="leading" secondItem="5bq-KQ-rKb" secondAttribute="leading" id="kRy-Oy-x2I"/>
+                                                <constraint firstAttribute="bottom" secondItem="1lA-6U-n2u" secondAttribute="bottom" id="poz-DN-45D"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="265" height="196"/>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="KH5-S0-cDZ" id="cej-XN-vGL"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9hr-Vx-REW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -294,7 +489,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Library" rowHeight="65" id="uc5-h1-DmI" customClass="LibraryGroupTableViewCell" customModule="AppleMusic" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="65"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uc5-h1-DmI" id="Tqy-6N-9de">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
@@ -555,6 +750,27 @@
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nVb-75-wPD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Vv3-ev-9aK">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="c1w-K1-vfa">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <cells>
+                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="eNn-qX-fl4">
+                            <rect key="frame" x="56" y="0.0" width="128" height="128"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Oa6-P6-GM3">
+                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </collectionViewCellContentView>
+                        </collectionViewCell>
+                    </cells>
+                </collectionView>
             </objects>
             <point key="canvasLocation" x="-299" y="1938"/>
         </scene>
@@ -575,7 +791,7 @@
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Downloaded" rowHeight="65" id="QTu-3x-GDj" customClass="DonwloadedTableViewCell" customModule="AppleMusic" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="65"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QTu-3x-GDj" id="8hW-Jh-4gq">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
@@ -755,7 +971,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SongsTableView" rowHeight="65" id="zaT-VK-8O9" customClass="SongTableViewCell" customModule="AppleMusic" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="65"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zaT-VK-8O9" id="R6d-8t-I6z">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
@@ -840,7 +1056,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ArtistsTableView" rowHeight="65" id="FH4-S5-Qib" customClass="ArtistTableViewCell" customModule="AppleMusic" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="65"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FH4-S5-Qib" id="WRf-9q-QIK">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
@@ -924,7 +1140,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewPlaylist" rowHeight="75" id="9bv-k0-YZn" customClass="PlaylistTableViewCell" customModule="AppleMusic" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="75"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9bv-k0-YZn" id="Wvq-uP-36W">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="75"/>
@@ -1216,7 +1432,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ArtistItems" rowHeight="65" id="oyX-et-yv5" customClass="ArtistItemsTableViewCell" customModule="AppleMusic" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="65"/>
+                                        <rect key="frame" x="0.0" y="50" width="414" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oyX-et-yv5" id="JK8-68-MzH">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="65"/>
@@ -1422,22 +1638,23 @@
     </scenes>
     <resources>
         <image name="IMG_20220606_103658_821" width="267.5" height="177.5"/>
-        <image name="backward.fill" catalog="system" width="128" height="79"/>
-        <image name="chevron.right" catalog="system" width="96" height="128"/>
-        <image name="dot.radiowaves.left.and.right" catalog="system" width="128" height="89"/>
-        <image name="forward.fill" catalog="system" width="128" height="79"/>
-        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
-        <image name="music.note" catalog="system" width="97" height="128"/>
-        <image name="music.note.house" catalog="system" width="128" height="106"/>
-        <image name="music.note.house.fill" catalog="system" width="128" height="106"/>
+        <image name="backward.fill" catalog="system" width="128" height="77"/>
+        <image name="chevron.right" catalog="system" width="97" height="128"/>
+        <image name="dot.radiowaves.left.and.right" catalog="system" width="128" height="91"/>
+        <image name="forward.fill" catalog="system" width="128" height="77"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <image name="music.note" catalog="system" width="96" height="128"/>
+        <image name="music.note.house" catalog="system" width="128" height="104"/>
+        <image name="music.note.house.fill" catalog="system" width="128" height="104"/>
         <image name="music.note.list" catalog="system" width="128" height="115"/>
+        <image name="music.quarternote.3" catalog="system" width="128" height="102"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
-        <image name="play.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="play.fill" catalog="system" width="116" height="128"/>
+        <image name="play.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="play.fill" catalog="system" width="117" height="128"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <image name="shuffle" catalog="system" width="128" height="95"/>
-        <image name="volume.3.fill" catalog="system" width="128" height="86"/>
-        <image name="volume.fill" catalog="system" width="128" height="128"/>
+        <image name="volume.3.fill" catalog="system" width="128" height="84"/>
+        <image name="volume.fill" catalog="system" width="128" height="125"/>
         <namedColor name="SkyBlue">
             <color red="0.72536433256113009" green="1" blue="0.99285986494789524" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
@@ -1454,7 +1671,7 @@
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiaryLabelColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

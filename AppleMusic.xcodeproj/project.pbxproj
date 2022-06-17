@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		668DEC54285C9E4400EC897A /* RecentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668DEC53285C9E4400EC897A /* RecentCollectionViewCell.swift */; };
+		668DEC56285CAD9E00EC897A /* RadioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668DEC55285CAD9E00EC897A /* RadioViewController.swift */; };
+		668DEC58285CAE1F00EC897A /* EasyPopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668DEC57285CAE1F00EC897A /* EasyPopTableViewCell.swift */; };
+		668DEC5A285CAE5800EC897A /* RecentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668DEC59285CAE5800EC897A /* RecentTableViewCell.swift */; };
+		668DEC5D285CAEA100EC897A /* TopCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668DEC5C285CAEA100EC897A /* TopCollectionViewCell.swift */; };
+		668DEC5F285CAEB400EC897A /* BottomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668DEC5E285CAEB400EC897A /* BottomCollectionViewCell.swift */; };
 		F810BD532859A00F0003D882 /* ArtistItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F810BD522859A00F0003D882 /* ArtistItemsViewController.swift */; };
 		F810BD552859A30A0003D882 /* ArtistItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F810BD542859A30A0003D882 /* ArtistItemsTableViewCell.swift */; };
 		F8139F92285C87AB005887EC /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8139F91285C87AB005887EC /* Color.swift */; };
@@ -28,7 +32,6 @@
 		F86980EF283E082E000D9BCE /* LibraryGroupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86980EE283E082E000D9BCE /* LibraryGroupTableViewCell.swift */; };
 		F86980F1283E302B000D9BCE /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86980F0283E302B000D9BCE /* LibraryViewController.swift */; };
 		F869816828487284000D9BCE /* RadioCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F869816728487284000D9BCE /* RadioCollectionViewCell.swift */; };
-		F869816A284873B9000D9BCE /* RadioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8698169284873B9000D9BCE /* RadioViewController.swift */; };
 		F869816C28488052000D9BCE /* RadioCollectionViewItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = F869816B28488052000D9BCE /* RadioCollectionViewItems.swift */; };
 		F869818E284E072C000D9BCE /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F869818D284E072C000D9BCE /* PlaylistViewController.swift */; };
 		F8698192284E1808000D9BCE /* PlaylistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8698191284E1808000D9BCE /* PlaylistTableViewCell.swift */; };
@@ -44,7 +47,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		668DEC53285C9E4400EC897A /* RecentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentCollectionViewCell.swift; sourceTree = "<group>"; };
+		668DEC55285CAD9E00EC897A /* RadioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioViewController.swift; sourceTree = "<group>"; };
+		668DEC57285CAE1F00EC897A /* EasyPopTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasyPopTableViewCell.swift; sourceTree = "<group>"; };
+		668DEC59285CAE5800EC897A /* RecentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentTableViewCell.swift; sourceTree = "<group>"; };
+		668DEC5C285CAEA100EC897A /* TopCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCollectionViewCell.swift; sourceTree = "<group>"; };
+		668DEC5E285CAEB400EC897A /* BottomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomCollectionViewCell.swift; sourceTree = "<group>"; };
 		F810BD522859A00F0003D882 /* ArtistItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistItemsViewController.swift; sourceTree = "<group>"; };
 		F810BD542859A30A0003D882 /* ArtistItemsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistItemsTableViewCell.swift; sourceTree = "<group>"; };
 		F8139F91285C87AB005887EC /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -67,7 +74,6 @@
 		F86980EE283E082E000D9BCE /* LibraryGroupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryGroupTableViewCell.swift; sourceTree = "<group>"; };
 		F86980F0283E302B000D9BCE /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
 		F869816728487284000D9BCE /* RadioCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioCollectionViewCell.swift; sourceTree = "<group>"; };
-		F8698169284873B9000D9BCE /* RadioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioViewController.swift; sourceTree = "<group>"; };
 		F869816B28488052000D9BCE /* RadioCollectionViewItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioCollectionViewItems.swift; sourceTree = "<group>"; };
 		F869818D284E072C000D9BCE /* PlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
 		F8698191284E1808000D9BCE /* PlaylistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistTableViewCell.swift; sourceTree = "<group>"; };
@@ -93,6 +99,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		668DEC5B285CAE6900EC897A /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				668DEC5C285CAEA100EC897A /* TopCollectionViewCell.swift */,
+				668DEC5E285CAEB400EC897A /* BottomCollectionViewCell.swift */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
 		F8139F90285C8799005887EC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,7 +167,6 @@
 			children = (
 				F86980D7283CC952000D9BCE /* MainViewController.swift */,
 				F86980F0283E302B000D9BCE /* LibraryViewController.swift */,
-				F8698169284873B9000D9BCE /* RadioViewController.swift */,
 				F869818D284E072C000D9BCE /* PlaylistViewController.swift */,
 				F8698197284E2727000D9BCE /* SearchViewController.swift */,
 				F8698199284F15DB000D9BCE /* AlbumViewController.swift */,
@@ -162,6 +176,7 @@
 				F8243D092851B7AD00D904A5 /* DownloadedViewController.swift */,
 				F810BD522859A00F0003D882 /* ArtistItemsViewController.swift */,
 				F83DB7F7285C4CC400A81F6C /* NewPlaylistViewController.swift */,
+				668DEC55285CAD9E00EC897A /* RadioViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -169,7 +184,7 @@
 		F86980EB283E063A000D9BCE /* ViewCells */ = {
 			isa = PBXGroup;
 			children = (
-				668DEC53285C9E4400EC897A /* RecentCollectionViewCell.swift */,
+				668DEC5B285CAE6900EC897A /* CollectionViewCells */,
 				F86980EE283E082E000D9BCE /* LibraryGroupTableViewCell.swift */,
 				F869816728487284000D9BCE /* RadioCollectionViewCell.swift */,
 				F8698191284E1808000D9BCE /* PlaylistTableViewCell.swift */,
@@ -179,6 +194,8 @@
 				F84551502851EB64008F4435 /* DonwloadedTableViewCell.swift */,
 				F889115C28521D9D00481E1B /* RecentlyDownloadedCollectionViewCell.swift */,
 				F810BD542859A30A0003D882 /* ArtistItemsTableViewCell.swift */,
+				668DEC57285CAE1F00EC897A /* EasyPopTableViewCell.swift */,
+				668DEC59285CAE5800EC897A /* RecentTableViewCell.swift */,
 			);
 			path = ViewCells;
 			sourceTree = "<group>";
@@ -255,7 +272,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F86980F1283E302B000D9BCE /* LibraryViewController.swift in Sources */,
-				668DEC54285C9E4400EC897A /* RecentCollectionViewCell.swift in Sources */,
 				F86980D8283CC952000D9BCE /* MainViewController.swift in Sources */,
 				F810BD532859A00F0003D882 /* ArtistItemsViewController.swift in Sources */,
 				F83DB7FC285C6F4D00A81F6C /* ArtistItems.swift in Sources */,
@@ -264,13 +280,16 @@
 				F84551512851EB64008F4435 /* DonwloadedTableViewCell.swift in Sources */,
 				F810BD552859A30A0003D882 /* ArtistItemsTableViewCell.swift in Sources */,
 				F8243D0A2851B7AD00D904A5 /* DownloadedViewController.swift in Sources */,
+				668DEC5D285CAEA100EC897A /* TopCollectionViewCell.swift in Sources */,
 				F880AD002850A0E100BC0CF8 /* ArtistTableViewCell.swift in Sources */,
 				F86980D4283CC952000D9BCE /* AppDelegate.swift in Sources */,
 				F83DB7FA285C6AF400A81F6C /* Songs.swift in Sources */,
 				F83DB7F6285B1C0F00A81F6C /* Artists.swift in Sources */,
 				F869819C284F45E4000D9BCE /* AlbumsCollectionViewCell.swift in Sources */,
+				668DEC5F285CAEB400EC897A /* BottomCollectionViewCell.swift in Sources */,
 				F880AD042850B1DF00BC0CF8 /* SongViewController.swift in Sources */,
 				F86980E9283CEF54000D9BCE /* LibraryGroups.swift in Sources */,
+				668DEC58285CAE1F00EC897A /* EasyPopTableViewCell.swift in Sources */,
 				F86980D6283CC952000D9BCE /* SceneDelegate.swift in Sources */,
 				F869819A284F15DB000D9BCE /* AlbumViewController.swift in Sources */,
 				F83DB7F8285C4CC400A81F6C /* NewPlaylistViewController.swift in Sources */,
@@ -278,10 +297,11 @@
 				F880AD062850BD6900BC0CF8 /* SongTableViewCell.swift in Sources */,
 				F8698198284E2727000D9BCE /* SearchViewController.swift in Sources */,
 				F869818E284E072C000D9BCE /* PlaylistViewController.swift in Sources */,
+				668DEC5A285CAE5800EC897A /* RecentTableViewCell.swift in Sources */,
 				F8139F92285C87AB005887EC /* Color.swift in Sources */,
 				F869816828487284000D9BCE /* RadioCollectionViewCell.swift in Sources */,
 				F8243D082851AB2900D904A5 /* GenreViewController.swift in Sources */,
-				F869816A284873B9000D9BCE /* RadioViewController.swift in Sources */,
+				668DEC56285CAD9E00EC897A /* RadioViewController.swift in Sources */,
 				F8698196284E217E000D9BCE /* PlaylistItems.swift in Sources */,
 				F889115D28521D9D00481E1B /* RecentlyDownloadedCollectionViewCell.swift in Sources */,
 				F86980EF283E082E000D9BCE /* LibraryGroupTableViewCell.swift in Sources */,
