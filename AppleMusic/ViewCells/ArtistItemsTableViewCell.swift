@@ -1,16 +1,16 @@
 //
-//  LibraryGroupTableViewCell.swift
+//  ArtistItemsTableViewCell.swift
 //  AppleMusic
 //
-//  Created by Nargiz on 25/05/22.
+//  Created by Nargiz on 15/06/22.
 //
 
 import UIKit
 
-class LibraryGroupTableViewCell: UITableViewCell {
+class ArtistItemsTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var iconOfGroup: UIImageView!
-    @IBOutlet weak var groupTitle: UILabel!
+    @IBOutlet weak var artistIcon: UIImageView!
+    @IBOutlet weak var artistItemsSongNameLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,5 +22,4 @@ class LibraryGroupTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
 }
