@@ -10,6 +10,7 @@ import UIKit
 
 class DownloadedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UICollectionViewDelegate, UICollectionViewDataSource {
     
+    //MARK: - my data
     var groups: [LibraryGroups] = [
         LibraryGroups(albumName: "Playlists", imageName: "music.note.list", next: "chevron.right"),
         LibraryGroups(albumName: "Artists", imageName: "music.mic", next: "chevron.right"),
@@ -18,6 +19,12 @@ class DownloadedViewController: UIViewController, UITableViewDelegate, UITableVi
         LibraryGroups(albumName: "Genres", imageName: "guitars", next: "chevron.right")
     ]
     
+    //MARK: - life cycle of VC
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    //MARK: - methods of TableView
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         groups.count
     }
@@ -35,6 +42,7 @@ class DownloadedViewController: UIViewController, UITableViewDelegate, UITableVi
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
+    //MARK: - methods of CollectionView
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         4
     }

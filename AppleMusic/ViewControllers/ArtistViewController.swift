@@ -12,6 +12,7 @@ class ArtistViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     @IBOutlet weak var tableView: UITableView!
     
+    //MARK: -  my data
     var artists: [Artists] = [
         Artists(artistName: "Rihanna", artistImage: "person.fill", music: [
             ArtistItems(songName: "Unfaithful"),
@@ -36,6 +37,11 @@ class ArtistViewController: UIViewController, UITableViewDelegate, UITableViewDa
         ])
     ]
     
+    //MARK: - Life cycle of ViewController
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return artists.count
     }
@@ -53,10 +59,7 @@ class ArtistViewController: UIViewController, UITableViewDelegate, UITableViewDa
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
+    //MARK: - processing segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ArtistsToArtistItems",
            let vc = segue.destination as? ArtistItemsViewController,

@@ -12,13 +12,19 @@ class PlaylistViewController: UIViewController, UITableViewDelegate, UITableView
     
     @IBOutlet weak var playlistTableView: UITableView!
     
+    //MARK: - my data
     var playlistItems: [PlaylistItems] = [
         PlaylistItems(playlistIcon: "plus", playlistLabel: "New Playlist..."),
         PlaylistItems(playlistIcon: "music.note.list", playlistLabel: "My Playlist")
     ]
     
+    //MARK: - life cycle of VC
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        2
+        playlistItems.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -29,14 +35,11 @@ class PlaylistViewController: UIViewController, UITableViewDelegate, UITableView
         return cell
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
+    //MARK: - processing segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "PlaylistToNewPlaylist",
            let vc = segue.destination as? NewPlaylistViewController,

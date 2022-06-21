@@ -9,6 +9,12 @@ import Foundation
 import UIKit
 
 class AlbumViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+    
+    //MARK: - life cycle of VC
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         5
     }
