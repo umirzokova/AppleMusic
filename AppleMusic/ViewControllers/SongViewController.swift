@@ -12,7 +12,7 @@ class SongViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     @IBOutlet weak var songTableView: UITableView!
     
-    
+    //MARK: - my data
     var songs: [Songs] = [
         Songs(songNames: "Memories", songsImageView: "music.note", artistName: "Maroon5"),
         Songs(songNames: "Umbrella", songsImageView: "music.note", artistName: "Rihanna"),
@@ -29,6 +29,11 @@ class SongViewController: UIViewController, UITableViewDelegate, UITableViewData
         Songs(songNames: "Unfaithful", songsImageView: "music.note", artistName: "Rihanna")
     ]
     
+    //MARK: - Life cycle of ViewController
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return songs.count
     }
@@ -44,14 +49,11 @@ class SongViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let mainVC = MainViewController()
+        let mainVC = PlayerViewController()
         self.present(mainVC, animated: true)
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
+    //MARK: - processing segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "SongsToMainViewController",
            let vc = segue.destination as? MainViewController,

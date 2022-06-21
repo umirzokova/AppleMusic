@@ -10,6 +10,7 @@ import UIKit
 
 class LibraryViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    //MARK: -  my data
     var groups: [LibraryGroups] = [
         LibraryGroups(albumName: "Playlists", imageName: "music.note.list", next: "chevron.right"),
         LibraryGroups(albumName: "Artists", imageName: "music.mic", next: "chevron.right"),
@@ -19,6 +20,7 @@ class LibraryViewController: UIViewController, UITableViewDataSource, UITableVie
         LibraryGroups(albumName: "Downloaded", imageName: "arrow.down.circle", next: "chevron.right")
     ]
     
+    //MARK: - Life cycle of ViewController
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         groups.count
     }
@@ -31,6 +33,7 @@ class LibraryViewController: UIViewController, UITableViewDataSource, UITableVie
         return cell
     }
     
+    //MARK: - transation processing
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
@@ -49,5 +52,11 @@ class LibraryViewController: UIViewController, UITableViewDataSource, UITableVie
         } else if selectedAlbumName == "Downloaded" {
             performSegue(withIdentifier: "LibraryToDownloadedItems", sender: self)
         }
+    }
+    
+    @IBAction func onClickPlayer2(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: .main)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "PlayerViewController") as! PlayerViewController
+        self.present(viewController, animated: true)
     }
 }

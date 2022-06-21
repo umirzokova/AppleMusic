@@ -12,6 +12,7 @@ class SearchViewController: UIViewController {
     
     let searchController = UISearchController()
     
+    //MARK: - life cycle of VC
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.searchController = searchController

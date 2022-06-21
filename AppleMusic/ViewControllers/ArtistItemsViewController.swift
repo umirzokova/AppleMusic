@@ -12,6 +12,7 @@ class ArtistItemsViewController: UIViewController, UITableViewDelegate, UITableV
 
     var artistItem1: Artists!
     
+    //MARK: - my data
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
